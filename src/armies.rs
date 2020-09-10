@@ -29,23 +29,48 @@ pub mod armies {
     mod execute {
         
         pub fn add () {
-
+            println!("Please enter the army name you want to add!");
+            let mut input   =   String::new();
+            std::io::stdin().read_line(&mut input).expect("Error parsing input!");
+            let army_name   =   input.trim();
         }
 
         pub fn remove () {
-
+            println!("Please enter the name of the army you want to remove!");
+            let mut input   =   String::new();
+            std::io::stdin().read_line(&mut input).expect("Error parsing input!");
+            let army_name   =   input.trim();
         }
 
         pub fn add_unit () {
-
+            println!("Please enter the name of the army you want to add an unit to!");
+            let mut input_army  =   String::new();
+            std::io::stdin().read_line(&mut input_army).expect("Error parsing input!");
+            let army_name   =   input_army.trim();
+            
+            println!("Please enter the name of the unit you want to add!");
+            let mut input_unit  =   String::new();
+            std::io::stdin().read_line(&mut input_unit).expect("Error parsing input!");
+            let unit_name   =   input_unit.trim();
         }
 
         pub fn remove_unit () {
+            println!("Please enter the name of the army you want to remove an unit from!");
+            let mut input_army   =   String::new();
+            std::io::stdin().read_line(&mut input_army).expect("Error parsing input!");
+            let army_name   =   input_army.trim();
 
+            println!("Please enter the name of the unit you want to remove!");
+            let mut input_unit  =   String::new();
+            std::io::stdin().read_line(&mut input_unit).expect("Error parsing input!");
+            let unit_name   =   input_unit.trim();
         }
 
         pub fn print () {
-
+            println!("Please enter the name of the army you want to print!");
+            let mut input   =   String::new();
+            std::io::stdin().read_line(&mut input).expect("Error parsing input!");
+            let army_name   =   input.trim();
         }
     }
 }
