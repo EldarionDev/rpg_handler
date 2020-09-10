@@ -1,11 +1,13 @@
 pub mod factions {
-    
-    pub fn process_command () {
+
+    pub fn process_command() {
         loop {
             println!("Please input an army command or help to see available commands or back to go back!");
-            let mut input   =   String::new();
-            std::io::stdin().read_line(&mut input).expect("Error parsing input!");
-            let input : &str    =   input.trim();
+            let mut input = String::new();
+            std::io::stdin()
+                .read_line(&mut input)
+                .expect("Error parsing input!");
+            let input: &str = input.trim();
             if input == "help" {
                 println!("Available commands: 'print_balance', 'print_military_strength', 'print_economic_strength',
                 'print_upkeep_total', 'print_leader', 'print_members', 'change_leader', 'add_member', 'remove_member'");
@@ -37,41 +39,23 @@ pub mod factions {
     }
 
     pub mod execute {
-        
-        pub fn print_balance () {
 
-        }
+        pub fn print_balance() {}
 
-        pub fn print_military_strength () {
+        pub fn print_military_strength() {}
 
-        }
+        pub fn print_economic_strength() {}
 
-        pub fn print_economic_strength () {
+        pub fn print_upkeep_total() {}
 
-        }
+        pub fn print_leader() {}
 
-        pub fn print_upkeep_total () {
+        pub fn print_members() {}
 
-        }
+        pub fn change_leader() {}
 
-        pub fn print_leader () {
+        pub fn add_member() {}
 
-        }
-
-        pub fn print_members () {
-
-        }
-
-        pub fn change_leader () {
-
-        }
-
-        pub fn add_member () {
-
-        }
-
-        pub fn remove_member () {
-
-        }
+        pub fn remove_member() {}
     }
 }
